@@ -23,10 +23,11 @@
 
         <ImageView
             android:id="@+id/iv_pokemon"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="168dp"
+            android:layout_height="110dp"
             android:contentDescription="Pokemon Image"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_name"
+            app:layout_constraintHorizontal_bias="0.066"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,33 +38,38 @@
             android:textColor="#919191"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iv_pokemon"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toEndOf="@+id/iv_pokemon"
+            app:layout_constraintTop_toTopOf="parent"
             tools:text="N. 004" />
 
         <TextView
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:textColor="#313131"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.843"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_number"
             tools:text="Charmander" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="190dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="12dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toEndOf="@+id/iv_pokemon"
             app:layout_constraintTop_toBottomOf="@+id/tv_name">
 
             <TextView
                 android:id="@+id/tv_type1"
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
+                android:layout_width="91dp"
+                android:layout_height="match_parent"
                 android:background="#A4ACAF"
                 android:gravity="center_horizontal"
                 android:textAlignment="center"
@@ -73,8 +79,8 @@
 
             <TextView
                 android:id="@+id/tv_type2"
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
+                android:layout_width="91dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
                 android:background="#A4ACAF"
